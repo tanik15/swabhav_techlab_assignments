@@ -3,7 +3,8 @@ package com.aurionpro.inheritance.accountException;
 public class MinimumBalanceViolationException extends RuntimeException{
 	int minimumBalance;
 	public String getMessage() {
-		return "Minimum balance must be " + minimumBalance;
+		String message = "Minimum balance must be " + minimumBalance;
+		return message;
 	}
 	public MinimumBalanceViolationException(int minimumBalance) {
 		super();
